@@ -16,6 +16,9 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
@@ -69,7 +72,9 @@ fun Dashboard(navController: NavHostController){
             //Row1
             Row {
                 //Card1
-                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp))
+                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp)
+                    .shadow(40.dp, shape = RectangleShape,clip = true, ambientColor = Color.Black, spotColor = Color.Black)
+                )
                 {
                     Column {
                         Box(
@@ -97,7 +102,9 @@ fun Dashboard(navController: NavHostController){
                 Spacer(modifier = Modifier.width(50.dp))
 
                 //Card2
-                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp))
+                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp)
+                    .shadow(40.dp, shape = RectangleShape,clip = true, ambientColor = Color.Black, spotColor = Color.Black)
+                )
                 {
                     Column {
                         Box(
@@ -129,8 +136,10 @@ fun Dashboard(navController: NavHostController){
 
             //Row2
             Row {
-                //Card1
-                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp))
+                //Card3
+                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp)
+                    .shadow(40.dp, shape = RectangleShape,clip = true, ambientColor = Color.Black, spotColor = Color.Black)
+                )
                 {
                     Column {
                         Box(
@@ -153,12 +162,14 @@ fun Dashboard(navController: NavHostController){
                         )
                     }
                 }
-                //End of Card1
+                //End of Card3
 
                 Spacer(modifier = Modifier.width(50.dp))
 
-                //Card2
-                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp))
+                //Card4
+                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp)
+                    .shadow(40.dp, shape = RectangleShape,clip = true, ambientColor = Color.Black, spotColor = Color.Black)
+                )
                 {
                     Column {
                         Box(
@@ -182,7 +193,7 @@ fun Dashboard(navController: NavHostController){
                     }
 
                 }
-                //End of Card2
+                //End of Card4
             }
             //End of Row2
 
@@ -190,8 +201,10 @@ fun Dashboard(navController: NavHostController){
 
             //Row3
             Row {
-                //Card1
-                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp))
+                //Card5
+                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp)
+                    .shadow(40.dp, shape = RectangleShape,clip = true, ambientColor = Color.Black, spotColor = Color.Black)
+                )
                 {
                     Column {
                         Box(
@@ -214,12 +227,14 @@ fun Dashboard(navController: NavHostController){
                         )
                     }
                 }
-                //End of Card1
+                //End of Card5
 
                 Spacer(modifier = Modifier.width(50.dp))
 
-                //Card2
-                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp))
+                //Card6
+                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp)
+                    .shadow(40.dp, shape = RectangleShape,clip = true, ambientColor = Color.Black, spotColor = Color.Black)
+                )
                 {
                     Column {
                         Box(
@@ -231,6 +246,7 @@ fun Dashboard(navController: NavHostController){
                                 painter = painterResource(id = R.drawable.amazon),
                                 contentDescription = "Amazon",
                                 modifier = Modifier.size(50.dp)
+
                             )
                         }
                         Text(
@@ -243,7 +259,7 @@ fun Dashboard(navController: NavHostController){
                     }
 
                 }
-                //End of Card2
+                //End of Card6
             }
             //End of Row3
         }
