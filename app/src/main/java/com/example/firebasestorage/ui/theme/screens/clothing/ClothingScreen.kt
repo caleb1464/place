@@ -183,8 +183,8 @@ fun ClothingScreen(navController:NavHostController) {
             Row {
                //First Card
                Card (modifier = Modifier
-                  .size(width = 150.dp, height = 220.dp)
-                  .shadow(10.dp)
+                  .size(width = 150.dp, height = 300.dp)
+                  .shadow(30.dp)
                )
                {
                   Box(
@@ -207,12 +207,12 @@ fun ClothingScreen(navController:NavHostController) {
                      )
                      {
                         Text(
-                           text = " Bohemian Dress",
-                           fontSize = 15.sp,
+                           text = "Men Tuxedo",
+                           fontSize = 20.sp,
                         )
                         Text(
-                           text = "  Ksh. 900 ",
-                           fontSize = 15.sp,
+                           text = "Ksh. 900",
+                           fontSize = 20.sp,
                         )
 
                         OutlinedButton(
@@ -225,7 +225,7 @@ fun ClothingScreen(navController:NavHostController) {
                         {
                            Text(
                               text = "Add to Cart",
-                              fontSize = 10.sp
+                              fontSize = 30.sp
                            )
                         }
                      }
@@ -233,12 +233,12 @@ fun ClothingScreen(navController:NavHostController) {
                }
                //End of First Card
 
-               Spacer(modifier = Modifier.width(25.dp))
+               Spacer(modifier = Modifier.width(30.dp))
 
                //Second Card
                Card (modifier = Modifier
-                  .size(width = 150.dp, height = 220.dp)
-                  .shadow(10.dp)
+                  .size(width = 150.dp, height = 300.dp)
+                  .shadow(30.dp)
                )
                {
                   Box(
@@ -260,12 +260,12 @@ fun ClothingScreen(navController:NavHostController) {
                            .fillMaxWidth()
                      ) {
                         Text(
-                           text = " White Suit",
-                           fontSize = 15.sp,
+                           text = "Fur Coats",
+                           fontSize = 20.sp,
                         )
                         Text(
-                           text = "  Ksh. 2500 ",
-                           fontSize = 15.sp,
+                           text = "Ksh. 2500",
+                           fontSize = 20.sp,
                         )
 
                         OutlinedButton(
@@ -281,7 +281,7 @@ fun ClothingScreen(navController:NavHostController) {
                         {
                            Text(
                               text = "Add to Cart",
-                              fontSize = 10.sp
+                              fontSize = 30.sp
                            )
                         }
                      }
@@ -290,14 +290,14 @@ fun ClothingScreen(navController:NavHostController) {
                //End of Second Card
             } // End of Row 1
             
-            Spacer(modifier = Modifier.height(25.dp))
+            Spacer(modifier = Modifier.height(30.dp))
 
             //Row 2
             Row {
                //Third Card
                Card (modifier = Modifier
-                  .size(width = 150.dp, height = 220.dp)
-                  .shadow(10.dp)
+                  .size(width = 150.dp, height = 300.dp)
+                  .shadow(30.dp)
                )
                {
                   Box(
@@ -306,7 +306,7 @@ fun ClothingScreen(navController:NavHostController) {
                   )
                   {
                      Image(
-                        painter = painterResource(id = R.drawable.menclothing),
+                        painter = painterResource(id = R.drawable.whitesuits),
                         contentDescription = "amazon",
                         modifier = Modifier.fillMaxSize(),
                         contentScale = ContentScale.Crop,
@@ -320,12 +320,12 @@ fun ClothingScreen(navController:NavHostController) {
                      )
                      {
                         Text(
-                           text = " Bohemian Dress",
-                           fontSize = 15.sp
+                           text = "White suits",
+                           fontSize = 20.sp
                         )
                         Text(
-                           text = "  Ksh. 900 ",
-                           fontSize = 15.sp
+                           text = "Ksh. 1500",
+                           fontSize = 20.sp
                         )
 
                         OutlinedButton(
@@ -338,7 +338,7 @@ fun ClothingScreen(navController:NavHostController) {
                         {
                            Text(
                               text = "Add to Cart",
-                              fontSize = 10.sp
+                              fontSize = 30.sp
                            )
                         }
                      }
@@ -350,8 +350,8 @@ fun ClothingScreen(navController:NavHostController) {
 
                //Fourth card
                Card (modifier = Modifier
-                  .size(width = 150.dp, height = 220.dp)
-                  .shadow(10.dp)
+                  .size(width = 150.dp, height = 300.dp)
+                  .shadow(30.dp)
                )
                {
                   Box(
@@ -360,7 +360,7 @@ fun ClothingScreen(navController:NavHostController) {
                   )
                   {
                      Image(
-                        painter = painterResource(id = R.drawable.womenclothing),
+                        painter = painterResource(id = R.drawable.gucci),
                         contentDescription = "amazon",
                         modifier = Modifier.fillMaxSize(),
                         contentScale = ContentScale.Crop
@@ -374,12 +374,12 @@ fun ClothingScreen(navController:NavHostController) {
                      )
                      {
                         Text(
-                           text = " White Suit",
-                           fontSize = 15.sp,
+                           text = "Gucci Fashion Clothes",
+                           fontSize = 20.sp,
                         )
                         Text(
-                           text = "  Ksh. 2500 ",
-                           fontSize = 15.sp
+                           text = "Ksh. 2500",
+                           fontSize = 20.sp
                         )
 
                         OutlinedButton(
@@ -389,13 +389,13 @@ fun ClothingScreen(navController:NavHostController) {
                                      },
                            modifier = Modifier
                               .fillMaxWidth()
-                              .clip(RoundedCornerShape(10.dp)
+                              .clip(RoundedCornerShape(30.dp)
                               ),
                            )
                         {
                            Text(
                               text = "Add to Cart",
-                              fontSize = 10.sp
+                              fontSize = 30.sp
                            )
                         }
                      }
@@ -404,15 +404,15 @@ fun ClothingScreen(navController:NavHostController) {
                //End of Fourth Card
             } // End of Row 2
 
-            Spacer(modifier = Modifier.height(25.dp))
+            Spacer(modifier = Modifier.height(30.dp))
 
             //Row 3
             Row {
 
                //Fifth Card
                Card (modifier = Modifier
-                  .size(width = 150.dp, height = 220.dp)
-                  .shadow(10.dp)
+                  .size(width = 150.dp, height = 300.dp)
+                  .shadow(30.dp)
                )
                {
                   Box(
@@ -421,7 +421,7 @@ fun ClothingScreen(navController:NavHostController) {
                   )
                   {
                      Image(
-                        painter = painterResource(id = R.drawable.menclothing),
+                        painter = painterResource(id = R.drawable.children),
                         contentDescription = "amazon",
                         modifier = Modifier.fillMaxSize(),
                         contentScale = ContentScale.Crop
@@ -435,12 +435,12 @@ fun ClothingScreen(navController:NavHostController) {
                      )
                      {
                         Text(
-                           text = " White Suit",
-                           fontSize = 15.sp,
+                           text = "Children Fashion",
+                           fontSize = 20.sp,
                         )
                         Text(
-                           text = "  Ksh. 2500 ",
-                           fontSize = 15.sp
+                           text = "Ksh. 2500",
+                           fontSize = 20.sp
                         )
 
                         OutlinedButton(
@@ -450,13 +450,13 @@ fun ClothingScreen(navController:NavHostController) {
                                      },
                            modifier = Modifier
                               .fillMaxWidth()
-                              .clip(RoundedCornerShape(10.dp)
+                              .clip(RoundedCornerShape(30.dp)
                               ),
                            )
                         {
                            Text(
                               text = "Add to Cart",
-                              fontSize = 10.sp
+                              fontSize = 30.sp
                            )
                         }
                      }
@@ -467,8 +467,8 @@ fun ClothingScreen(navController:NavHostController) {
 
                //Sixth card
                Card (modifier = Modifier
-                  .size(width = 150.dp, height = 220.dp)
-                  .shadow(10.dp)
+                  .size(width = 150.dp, height = 300.dp)
+                  .shadow(30.dp)
                )
                {
                   Box(
@@ -477,7 +477,7 @@ fun ClothingScreen(navController:NavHostController) {
                   )
                   {
                      Image(
-                        painter = painterResource(id = R.drawable.womenclothing),
+                        painter = painterResource(id = R.drawable.ladies),
                         contentDescription = "amazon",
                         modifier = Modifier.fillMaxSize(),
                         contentScale = ContentScale.Crop,
@@ -491,12 +491,12 @@ fun ClothingScreen(navController:NavHostController) {
                      )
                      {
                         Text(
-                           text = " White Suit",
-                           fontSize = 15.sp,
+                           text = "Ladies Dress",
+                           fontSize = 20.sp,
                         )
                         Text(
-                           text = "  Ksh. 2500 ",
-                           fontSize = 15.sp
+                           text = "Ksh. 2500",
+                           fontSize = 20.sp
                         )
 
                         OutlinedButton(
@@ -505,12 +505,12 @@ fun ClothingScreen(navController:NavHostController) {
                               simToolKitLaunchIntent?.let { mContext.startActivity(it) }
                                      },
                            modifier = Modifier.fillMaxWidth()
-                              .clip(RoundedCornerShape(10.dp)),
+                              .clip(RoundedCornerShape(30.dp)),
                            )
                         {
                            Text(
                               text = "Add to Cart",
-                              fontSize = 10.sp
+                              fontSize = 30.sp
                            )
                         }
                      }

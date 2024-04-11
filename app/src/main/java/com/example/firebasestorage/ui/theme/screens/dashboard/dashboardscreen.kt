@@ -9,6 +9,8 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.paddingFromBaseline
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.Card
@@ -31,6 +33,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.firebasestorage.R
 import com.example.firebasestorage.navigation.ROUT_CLOTHING
 import com.example.firebasestorage.ui.theme.red
+import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
 @Composable
 fun Dashboard(navController: NavHostController){
@@ -47,7 +50,8 @@ fun Dashboard(navController: NavHostController){
         Spacer(modifier = Modifier.height(30.dp))
 
         //Row
-        Row {
+        Row(modifier = Modifier.padding(start = 30.dp))
+        {
             Column {
                 Text(text = "Amazon",
                     fontSize = 30.sp,
@@ -72,7 +76,8 @@ fun Dashboard(navController: NavHostController){
 
         Column {
             //Row1
-            Row {
+            Row(modifier = Modifier.padding(start = 30.dp))
+            {
                 //Card1
                 Card(modifier = Modifier
                     .size(width = 150.dp, height = 120.dp)
@@ -83,28 +88,32 @@ fun Dashboard(navController: NavHostController){
                         ambientColor = Color.Black,
                         spotColor = Color.Black
                     )
-                    .clickable {navController.navigate(ROUT_CLOTHING) }
+                    .clickable { navController.navigate(ROUT_CLOTHING) }
                 )
                 {
                     Column {
                         Box(
-                            modifier = Modifier.fillMaxWidth(),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .paddingFromBaseline(top = 22.dp),
                             contentAlignment = Alignment.Center
                         )
                         {
                             Image(
-                                painter = painterResource(id = R.drawable.amazon),
+                                painter = painterResource(id = R.drawable.dress),
                                 contentDescription = "Amazon",
                                 modifier = Modifier.size(50.dp)
                             )
                         }
+
+                        Spacer(modifier = Modifier.height(10.dp))
+
                         Text(
                             text = "Clothing",
                             fontSize = 20.sp,
                             color = red,
                             modifier = Modifier.fillMaxWidth(),
-                            textAlign = TextAlign.Center,
-                            
+                            textAlign = TextAlign.Center
                         )
                     }
                 }
@@ -115,29 +124,28 @@ fun Dashboard(navController: NavHostController){
                 //Card2
                 Card(modifier = Modifier
                     .size(width = 150.dp, height = 120.dp)
-                    .shadow(
-                        40.dp,
-                        shape = RectangleShape,
-                        clip = true,
-                        ambientColor = Color.Black,
-                        spotColor = Color.Black
-                    )
+                    .shadow(40.dp)
                 )
                 {
                     Column {
                         Box(
-                            modifier = Modifier.fillMaxWidth(),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .paddingFromBaseline(top = 22.dp),
                             contentAlignment = Alignment.Center
                         )
                         {
                             Image(
-                                painter = painterResource(id = R.drawable.amazon),
+                                painter = painterResource(id = R.drawable.eletronics),
                                 contentDescription = "Amazon",
                                 modifier = Modifier.size(50.dp)
                             )
                         }
+
+                        Spacer(modifier = Modifier.height(10.dp))
+
                         Text(
-                            text = "Clothing",
+                            text = "Electronis",
                             fontSize = 20.sp,
                             color = red,
                             modifier = Modifier.fillMaxWidth(),
@@ -153,7 +161,8 @@ fun Dashboard(navController: NavHostController){
             Spacer(modifier = Modifier.height(40.dp))
 
             //Row2
-            Row {
+            Row(modifier = Modifier.padding(start = 30.dp))
+            {
                 //Card3
                 Card(modifier = Modifier
                     .size(
@@ -171,18 +180,23 @@ fun Dashboard(navController: NavHostController){
                 {
                     Column {
                         Box(
-                            modifier = Modifier.fillMaxWidth(),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .paddingFromBaseline(top = 22.dp),
                             contentAlignment = Alignment.Center
                         )
                         {
                             Image(
-                                painter = painterResource(id = R.drawable.amazon),
+                                painter = painterResource(id = R.drawable.home),
                                 contentDescription = "Amazon",
                                 modifier = Modifier.size(50.dp)
                             )
                         }
+
+                        Spacer(modifier = Modifier.height(10.dp))
+
                         Text(
-                            text = "Clothing",
+                            text = "Home",
                             fontSize = 20.sp,
                             color = red,
                             modifier = Modifier.fillMaxWidth(),
@@ -208,18 +222,23 @@ fun Dashboard(navController: NavHostController){
                 {
                     Column {
                         Box(
-                            modifier = Modifier.fillMaxWidth(),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .paddingFromBaseline(top = 22.dp),
                             contentAlignment = Alignment.Center
                         )
                         {
                             Image(
-                                painter = painterResource(id = R.drawable.amazon),
+                                painter = painterResource(id = R.drawable.beauty),
                                 contentDescription = "Amazon",
                                 modifier = Modifier.size(50.dp)
                             )
                         }
+
+                        Spacer(modifier = Modifier.height(10.dp))
+
                         Text(
-                            text = "Clothing",
+                            text = "Beauty",
                             fontSize = 20.sp,
                             color = red,
                             modifier = Modifier.fillMaxWidth(),
@@ -235,7 +254,8 @@ fun Dashboard(navController: NavHostController){
             Spacer(modifier = Modifier.height(40.dp))
 
             //Row3
-            Row {
+            Row(modifier = Modifier.padding(start = 30.dp))
+            {
                 //Card5
                 Card(modifier = Modifier
                     .size(width = 150.dp, height = 120.dp)
@@ -250,18 +270,23 @@ fun Dashboard(navController: NavHostController){
                 {
                     Column {
                         Box(
-                            modifier = Modifier.fillMaxWidth(),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .paddingFromBaseline(top = 22.dp),
                             contentAlignment = Alignment.Center
                         )
                         {
                             Image(
-                                painter = painterResource(id = R.drawable.amazon),
+                                painter = painterResource(id = R.drawable.medicine),
                                 contentDescription = "Amazon",
                                 modifier = Modifier.size(50.dp)
                             )
                         }
+
+                        Spacer(modifier = Modifier.height(10.dp))
+
                         Text(
-                            text = "Clothing",
+                            text = "Pharmacy",
                             fontSize = 20.sp,
                             color = red,
                             modifier = Modifier.fillMaxWidth(),
@@ -287,19 +312,24 @@ fun Dashboard(navController: NavHostController){
                 {
                     Column {
                         Box(
-                            modifier = Modifier.fillMaxWidth(),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .paddingFromBaseline(top = 22.dp),
                             contentAlignment = Alignment.Center
                         )
                         {
                             Image(
-                                painter = painterResource(id = R.drawable.amazon),
+                                painter = painterResource(id = R.drawable.grocceries),
                                 contentDescription = "Amazon",
                                 modifier = Modifier.size(50.dp)
 
                             )
                         }
+
+                        Spacer(modifier = Modifier.height(10.dp))
+
                         Text(
-                            text = "Clothing",
+                            text = "Grocceries",
                             fontSize = 20.sp,
                             color = red,
                             modifier = Modifier.fillMaxWidth(),
