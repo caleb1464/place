@@ -10,7 +10,7 @@ fun ContactScreen(navController: NavHostController) {
 
 }
 
-@Preview
+@Preview(showBackground = true)
 @Composable
 fun ContactScreenPreview() {
     ContactScreen(rememberNavController())

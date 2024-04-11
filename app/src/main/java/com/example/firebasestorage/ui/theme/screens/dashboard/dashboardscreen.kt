@@ -1,6 +1,7 @@
 package com.example.firebasestorage.ui.theme.screens.dashboard
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -28,6 +29,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.firebasestorage.R
+import com.example.firebasestorage.navigation.ROUT_CLOTHING
 import com.example.firebasestorage.ui.theme.red
 
 @Composable
@@ -72,8 +74,16 @@ fun Dashboard(navController: NavHostController){
             //Row1
             Row {
                 //Card1
-                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp)
-                    .shadow(40.dp, shape = RectangleShape,clip = true, ambientColor = Color.Black, spotColor = Color.Black)
+                Card(modifier = Modifier
+                    .size(width = 150.dp, height = 120.dp)
+                    .shadow(
+                        40.dp,
+                        shape = RectangleShape,
+                        clip = true,
+                        ambientColor = Color.Black,
+                        spotColor = Color.Black
+                    )
+                    .clickable {navController.navigate(ROUT_CLOTHING) }
                 )
                 {
                     Column {
@@ -93,7 +103,8 @@ fun Dashboard(navController: NavHostController){
                             fontSize = 20.sp,
                             color = red,
                             modifier = Modifier.fillMaxWidth(),
-                            textAlign = TextAlign.Center
+                            textAlign = TextAlign.Center,
+                            
                         )
                     }
                 }
@@ -102,8 +113,15 @@ fun Dashboard(navController: NavHostController){
                 Spacer(modifier = Modifier.width(50.dp))
 
                 //Card2
-                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp)
-                    .shadow(40.dp, shape = RectangleShape,clip = true, ambientColor = Color.Black, spotColor = Color.Black)
+                Card(modifier = Modifier
+                    .size(width = 150.dp, height = 120.dp)
+                    .shadow(
+                        40.dp,
+                        shape = RectangleShape,
+                        clip = true,
+                        ambientColor = Color.Black,
+                        spotColor = Color.Black
+                    )
                 )
                 {
                     Column {
@@ -137,8 +155,18 @@ fun Dashboard(navController: NavHostController){
             //Row2
             Row {
                 //Card3
-                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp)
-                    .shadow(40.dp, shape = RectangleShape,clip = true, ambientColor = Color.Black, spotColor = Color.Black)
+                Card(modifier = Modifier
+                    .size(
+                        width = 150.dp,
+                        height = 120.dp
+                    )
+                    .shadow(
+                        40.dp,
+                        shape = RectangleShape,
+                        clip = true,
+                        ambientColor = Color.Black,
+                        spotColor = Color.Black
+                    )
                 )
                 {
                     Column {
@@ -167,8 +195,15 @@ fun Dashboard(navController: NavHostController){
                 Spacer(modifier = Modifier.width(50.dp))
 
                 //Card4
-                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp)
-                    .shadow(40.dp, shape = RectangleShape,clip = true, ambientColor = Color.Black, spotColor = Color.Black)
+                Card(modifier = Modifier
+                    .size(width = 150.dp, height = 120.dp)
+                    .shadow(
+                        40.dp,
+                        shape = RectangleShape,
+                        clip = true,
+                        ambientColor = Color.Black,
+                        spotColor = Color.Black
+                    )
                 )
                 {
                     Column {
@@ -202,8 +237,15 @@ fun Dashboard(navController: NavHostController){
             //Row3
             Row {
                 //Card5
-                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp)
-                    .shadow(40.dp, shape = RectangleShape,clip = true, ambientColor = Color.Black, spotColor = Color.Black)
+                Card(modifier = Modifier
+                    .size(width = 150.dp, height = 120.dp)
+                    .shadow(
+                        40.dp,
+                        shape = RectangleShape,
+                        clip = true,
+                        ambientColor = Color.Black,
+                        spotColor = Color.Black
+                    )
                 )
                 {
                     Column {
@@ -232,8 +274,15 @@ fun Dashboard(navController: NavHostController){
                 Spacer(modifier = Modifier.width(50.dp))
 
                 //Card6
-                Card(modifier = Modifier.size(width = 150.dp, height = 120.dp)
-                    .shadow(40.dp, shape = RectangleShape,clip = true, ambientColor = Color.Black, spotColor = Color.Black)
+                Card(modifier = Modifier
+                    .size(width = 150.dp, height = 120.dp)
+                    .shadow(
+                        40.dp,
+                        shape = RectangleShape,
+                        clip = true,
+                        ambientColor = Color.Black,
+                        spotColor = Color.Black
+                    )
                 )
                 {
                     Column {
