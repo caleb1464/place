@@ -1,5 +1,7 @@
 package com.example.firebasestorage.ui.theme.screens.dashboard
 
+import android.content.Intent
+import android.widget.Toast
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -22,6 +24,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
@@ -30,10 +33,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.example.firebasestorage.InsertActivity
 import com.example.firebasestorage.R
 import com.example.firebasestorage.navigation.ROUT_CLOTHING
 import com.example.firebasestorage.ui.theme.red
-import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
 @Composable
 fun Dashboard(navController: NavHostController){
@@ -78,6 +81,7 @@ fun Dashboard(navController: NavHostController){
             //Row1
             Row(modifier = Modifier.padding(start = 30.dp))
             {
+                val mContext = LocalContext.current
                 //Card1
                 Card(modifier = Modifier
                     .size(width = 150.dp, height = 120.dp)
@@ -125,9 +129,14 @@ fun Dashboard(navController: NavHostController){
                 Card(modifier = Modifier
                     .size(width = 150.dp, height = 120.dp)
                     .shadow(40.dp)
+
                 )
                 {
-                    Column {
+                    Column(modifier = Modifier
+                        .clickable {
+                            mContext.startActivity(Intent(mContext,InsertActivity::class.java))
+                    }
+                    ) {
                         Box(
                             modifier = Modifier
                                 .fillMaxWidth()
@@ -145,7 +154,7 @@ fun Dashboard(navController: NavHostController){
                         Spacer(modifier = Modifier.height(10.dp))
 
                         Text(
-                            text = "Electronis",
+                            text = "Electronics",
                             fontSize = 20.sp,
                             color = red,
                             modifier = Modifier.fillMaxWidth(),
@@ -329,7 +338,7 @@ fun Dashboard(navController: NavHostController){
                         Spacer(modifier = Modifier.height(10.dp))
 
                         Text(
-                            text = "Grocceries",
+                            text = "Groceries",
                             fontSize = 20.sp,
                             color = red,
                             modifier = Modifier.fillMaxWidth(),
